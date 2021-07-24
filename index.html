@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="end_container">
+         <div class="top_container">
+             <h1 id="game_h1">Rock, Paper, Scissors</h1>
+         </div>
+         <div class="game_container">
+             <div class="player_container">
+                <div class="player_information">
+                    <h1 class="player_h1" id="player_h1_user">PLAYER</h2>
+                </div>
+                <div class="game_selections">
+                    <div class="game_selection" id="rock_div">
+                        <img class="game_selection_img" id="rock_img" src="img/rock.png" alt="">
+                    </div>
+                    <div class="game_selection" id="paper_div">
+                        <img class="game_selection_img" id="paper_img" src="img/paper.png" alt="">
+                    </div>
+                    <div class="game_selection" id="scissors_div"> 
+                        <img class="game_selection_img" id="scissors_img" src="img/scissors.png" alt="">
+                    </div>
+                </div>
+             </div>
+             <div class="score_container">
+                 <div class="player_score_div">
+                    <span class="score" id="player_score">0</span>
+                    <img class="player_score_logo" src="img/user.png" alt="">
+                 </div>
+                 <span class="versus_score">VS</span>
+                 <div class="computer_score_div">
+                    <img class="player_score_logo" src="img/robot.png" alt="">
+                    <span class="score" id="computer_score">0</span>
+                 </div>
+             </div>
+             <div class="result_round_div">
+                <span id="result_round">Let's play!</span>
+             </div>
+             <div class="player_container">
+                <div class="player_information">
+                    <h1 class="player_h1" id="player_h1_computer">COMPUTER</h1>
+                </div>
+                <div class="game_selections">
+                    <div class="game_selection" id="computer_rock_div">  
+                        <img class="game_selection_img" src="img/rock.png" alt="">
+                    </div>
+                    <div class="game_selection" id="computer_paper_div">              
+                        <img class="game_selection_img" src="img/paper.png" alt="">
+                    </div>
+                    <div class="game_selection" id="computer_scissors_div">
+                        <img class="game_selection_img" src="img/scissors.png" alt="">
+                    </div>
+                </div>
+             </div>
+         </div>
+         <div class="result_container" id="result_container">
+             <span id="game_result"></span>
+             <a href="index.html" id="endbutton">Play again</a>
+         </div>
+    <footer class="footer">
+        <p>Designed and developed by Lazoz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
